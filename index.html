@@ -7,7 +7,7 @@
   <style>
     body {
       margin: 0;
-      min-height: 100vh; /* Ajuste para visibilidad móvil */
+      min-height: 100vh;
       background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEr4GHroT_OR5dJ_VymR8wtwTry659tThdexqLHfxbwJQLWvxufoYyqWtqaScfw99unxj9Pdz1V9Co9PTNvOWuhdl6_rLPtmw0zCYC4flMk9eALfYEXiVmDqQ3pKXBcFLi5HQL_V8AvlRB/s1600/giphy+%25281%2529.gif');
       background-size: cover;
       background-position: center;
@@ -53,12 +53,17 @@
       padding: 12px 24px;
       font-size: 1rem;
       font-weight: bold;
-      background-color: red;
-      color: white; 
+      background-color: #001f3f; /* Azul marino */
+      color: white;
       border: none;
       border-radius: 10px;
       cursor: pointer;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-musica:hover {
+      background-color: #003366; /* Azul marino más claro al pasar el mouse */
     }
 
     @media screen and (max-width: 600px) {
