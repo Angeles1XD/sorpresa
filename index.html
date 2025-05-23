@@ -17,7 +17,7 @@
       justify-content: center;
       align-items: center;
       font-family: 'Arial', sans-serif;
-      overflow: hidden;
+      overflow-y: auto;
     }
 
     .felicitacion {
@@ -28,6 +28,8 @@
       color: black;
       gap: 25px;
       animation: float 3s ease-in-out infinite;
+      text-align: center;
+      padding: 10px;
     }
 
     .felicitacion img {
@@ -37,7 +39,7 @@
     }
 
     .message {
-      margin-top: 32px;
+      margin-top: 24px;
       color: #000000;
       font-size: 1.25rem;
       font-weight: 500;
@@ -47,8 +49,8 @@
     }
 
     .boton-musica {
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin-top: 24px;
+      padding: 12px 24px;
       font-size: 1rem;
       font-weight: bold;
       background-color: #ffcc00;
@@ -56,6 +58,23 @@
       border-radius: 10px;
       cursor: pointer;
       box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    @media screen and (max-width: 600px) {
+      .felicitacion {
+        font-size: 2rem;
+        flex-direction: column;
+      }
+
+      .boton-musica {
+        font-size: 1.2rem;
+        padding: 16px 28px;
+      }
+
+      .felicitacion img {
+        width: 70px;
+        height: 70px;
+      }
     }
 
     @keyframes float {
@@ -86,7 +105,7 @@
 
   <audio id="musica" loop>
     <source src="cumple.mp3" type="audio/mpeg">
-    Tu navegador no soporta audio HTML5.
+    Tu navegador no soporta el elemento de audio.
   </audio>
 
 </body>
